@@ -1,0 +1,173 @@
+/* .blockPage {
+    background: linear-gradient(rgba(231, 76, 60,0.7), rgba(211, 84, 0,0.7), url('img/background7.jpg'));
+    background-size: cover;
+
+} */
+
+
+.L{
+	height: 70px;
+	margin: 5px;
+	margin-bottom: 25px;
+    background-color: #a89784;
+    display: flex;
+}
+.num{
+    
+    font-size: 14px;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bf6000;
+    margin-top: 7px;
+    margin-right: 5px;
+
+}
+.num a{
+	 text-decoration:none;
+ 	 color: #fff;
+ 	 font-family: 'Open Sans Bold',sans-serif;
+ }
+ .L a{
+    color: #fff;
+    font-size: 1.1em;
+ }
+
+ .adresse{
+     position: relative;
+     top: 20%;
+ }
+
+
+ .headcol1 img{
+    width: 30px;
+    margin-right: 5px;
+}
+.headcol1 h2{
+    font-family: 'Concert One', cursive, sans-serif;
+    color: white;
+    font-size: 2em;
+}
+
+.liste, .lignes {
+    background-color: rgba(132,98,60,1);
+    padding: 50px;
+}
+
+.liste a:hover{
+    text-decoration: none;
+    color: rgba(191, 96, 0, 1);
+}
+
+.topSide {
+    background: url('../img/Safi.jpg');
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+}
+
+.topSide h1{
+    color:#fff;
+	text-shadow: 4px  2px black;
+    font-family: "Poppins SemiBold",sans-serif;
+    font-size: 2.5em;
+    word-spacing: 20px;
+    text-align: center;
+}
+
+.liste {
+    margin-top: 40px;
+    padding: 0;
+}
+
+.iconRech {
+    width: 90%;
+}
+
+#ligneRecherche{
+    width: 250px;
+    border-width: 2px;
+}
+
+
+@media (min-width:768px){
+    .iconRech{
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 770px){
+    #ligneRecherche{
+        margin-top: 50px;
+    }
+}
+
+
+.contact{
+    background: rgba(220, 53, 69, 1);
+    color: white;
+    padding-bottom: 30px;
+}
+
+.contact1 a{
+    color: #fff;
+    font-size: 1.7em;
+}
+
+.contact a:hover{
+    text-decoration: none;
+}
+
+.text h2{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.text h5{
+    font-size: 1em;
+    font-weight: initial;
+}
+
+.contact1, .contact2{
+    margin-bottom: 10px;
+}
+
+
+.form input{
+    text-align: center;
+}
+
+.title h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+@media (min-width: 992px){
+    .title h1 {
+        margin-left: 50%;
+        font-size: 5em;
+    }
+}
+
+.form{
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.apropos img{
+    width: 100%;
+}
+
+.apropos{
+    margin-top: 40px;
+}
+
+.bloc1{
+    margin-bottom: 100px;
+}

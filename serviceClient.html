@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MY BUS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/style2.css">
+
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-danger" id="nav">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"><span style="font-family: 'Baloo Chettan 2', cursive, sans-serif;">MY BUS</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lignes.html">Lignes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="serviceClient.html">Service client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="apropos.html">A propos</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <div>
+            <div class="d-flex justify-content-lg-start  justify-content-center flex-wrap">
+                <div class="title col-lg-4">
+                    <h1>Rendez-vous</h1>
+                </div>
+                <div class="form col-lg-8 justify-content-center">
+                    <form class="justify-content-center" action="">
+                        <div class="form-row col-12 justify-content-center">
+                            <div class="form-group col-lg-4 col-md-5 col-9">
+                                <label for="inputPrenom">Prènom</label>
+                                <input type="text" class="form-control" id="inputPrenom required">
+                            </div>
+                            <div class="form-group col-lg-4 col-md-5 col-9">
+                                <label for="inputNom">Nom</label>
+                                <input type="password" class="form-control" id="inputNom">
+                            </div>
+                        </div>
+                        <div class="form-row col-12 justify-content-center">
+                            <div class="form-group col-lg-4 col-md-5 col-9">
+                                <label for="inputCNI">CNI</label>
+                                <input type="text" class="form-control" id="inputCNI">
+                            </div>
+                            <div class="form-group col-lg-4 col-md-5 col-9">
+                                <label for="inputCNE">CNE</label>
+                                <input type="text" class="form-control" id="inputCNE">
+                            </div>
+                        </div>
+                        <div class="form-row col-12 justify-content-center">
+                            <div class="form-group col-lg-8 col-md-9 col-9">
+                                <label for="inputTel">Telephone</label>
+                                <input type="tel" class="form-control" id="inputTel">
+                            </div>
+                        </div>
+                        <div class="form-row col-12 justify-content-center">
+                            <div class="form-group col-lg-8 col-md-9 col-9">
+                                <label for="inputEtab">Etablissement</label>
+                                <input type="text" id="inputEtab" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row col-12 justify-content-center">
+                            <div class="form-group col-lg-4 col-md-5 col-9 justify-content-center">
+                                <label for="inputDate">Date</label>
+                                <input type="date" class="form-control" id="inputDate">
+                            </div>
+                            <div class="form-group col-lg-4 col-md-5 col-9 justify-content-center">
+                                <label for="inputDateHeure">L'heure</label>
+                                <input type="time" class="form-control" id="inputHeure">
+                            </div>
+                        </div>
+                        <div class="form-row col-12 justify-content-center">
+                            <button type="submit" class="btn btn-primary justify-content-center">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="contact container-fluid justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="text col-lg-9 col-9">
+                        <p><h5>Autres moyens de nous contacter</h5></p>
+                        <p><h2>Vous pouvez<br> également nous<br> contacter par les<br> canaux suivants</h2></p>
+                    </div>
+                </div>
+                <div class="infoContact container-fluid row justify-content-center">
+                    <div class="contact1 col-lg-3 col-md-4 col-sm-7">
+                        <a href="#"><i class="far fa-question-circle"></i> Service Client</a>
+                    </div>
+                    <div class="contact2 col-lg-3 col-md-4 col-sm-7">
+                        <h4><i class="fas fa-phone-volume"></i> 0500000000</h4>
+                    </div>
+                    <div class="contact3 col-lg-3 col-md-4 col-sm-7">
+                        <h4><i class="far fa-envelope"></i> bus@mybus.info</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
