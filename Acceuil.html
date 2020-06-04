@@ -1,0 +1,164 @@
+<?php
+function  depart() {
+    $host="localhost";
+    $user = "root";
+    $pass="";
+    $bd="ligne";
+    $con=mysqli_connect($host,$user,$pass,$bd);
+
+     $query="SELECT * FROM `table_depart` ORDER BY `nom_depart`";
+        $do=mysqli_query($con,$query);
+        $output='';
+        while($row = mysqli_fetch_array($do)){
+         $output .='<option value="'.$row['id_depart'].'">'.$row['nom_depart'].' </option>';
+        }
+        return $output;
+    }
+        ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MY BUS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-danger" id="nav">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"><span style="font-family: 'Baloo Chettan 2', cursive, sans-serif;">MY BUS</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Horaires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ligne.php">Lignes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="connection.php">Service client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A propos</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="blocPage row justify-content-md-center">
+
+            <div class="ban carousel slide col-lg-9 col-md-12" id="slides" data-ride="carousel">
+                <ul class="carousel-indicators">
+                   <li data-target="#slides" data-slide-to="0" class="active"></li>
+                   <li data-target="#slides" data-slide-to="1" class="active"></li>
+                   <li data-target="#slides" data-slide-to="2" class="active"></li> 
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/background.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/background1.jpeg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/background3.jpg">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="itineraire col-lg-3 col-md-8">
+                <h3 class="rechLignes">Trouvez votre ligne</h3>
+                <form action="#" class="formItin">
+                    <div class="select">                    
+                        <select class="casrecherche" title="stationDepart" class="depart" name="depart">
+                        <option>Départ : Adresse</option>
+                        <!-- afficher une liste des adresses de depart-->
+                        <?php echo depart(); ?>
+                        
+                        </select>
+                    </div>
+                    <div class="select1">
+                    <select class="casrecherche" title="stationArevee" name="arrivee" id="arrivee">
+                        <option>Arrivée : Adresse</option>
+                       
+
+                        
+                         
+                    </select>
+
+
+
+
+                </div><br>
+                     <script>
+   $(document).ready(function(){
+     $('#arrivee').change(function(){
+           var id_arrivee= $(this).val();
+           $.ajax({
+            url:"ajax2.php",
+            method:"POST",
+            data:{id_arrivee:id_arrivee},
+            dataType:"text",
+            success:function(data)
+            {
+                $('#ligne').html(data);
+            }
+           });
+
+     });
+
+
+   }); 
+
+</script>
+                    
+                    <p title="lignes" id="ligne" name="ligne">
+
+                    </p>
+                   
+                </form>
+                <img src="img/background2.jpg" class="bonjourSafi">
+
+
+            </div>
+
+
+        </div>
+
+    </body>
+
+</html>
+<script>
+   $(document).ready(function(){
+     $('#depart').change(function(){
+           var id_depart= $(this).val();
+           $.ajax({
+            url:"ajax.php",
+            method:"POST",
+            data:{id_depart:id_depart},
+            dataType:"text",
+            success:function(data)
+            {
+                $('#arrivee').html(data);
+            }
+           });
+
+     });
+
+
+   }); 
+
+</script>
