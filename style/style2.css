@@ -171,3 +171,19 @@
 .bloc1{
     margin-bottom: 100px;
 }
+
+.afterNav{
+    padding-bottom: 10em;
+    padding-top: 2em;
+    width : 100%;
+    background: rgb(220,53,69);
+    background: linear-gradient(180deg, rgba(220,53,69,1) 0%, rgba(220,53,69,1) 69%, rgba(255,255,255,1) 100%);
+    text-align: center;
+    color:white;
+}
+.QuiSommeNous{
+    font-size: 20px;
+}
+#securité{
+    width : 50%;
+}
