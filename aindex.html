@@ -1,3 +1,21 @@
+<?php
+function  depart() {
+    $host="localhost";
+    $user = "root";
+    $pass="";
+    $bd="ligne";
+    $con=mysqli_connect($host,$user,$pass,$bd);
+
+     $query="SELECT * FROM `table_depart` ORDER BY `nom_depart`";
+        $do=mysqli_query($con,$query);
+        $output='';
+        while($row = mysqli_fetch_array($do)){
+         $output .='<option value="'.$row['id_depart'].'">'.$row['nom_depart'].' </option>';
+        }
+        return $output;
+    }
+        ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,10 +26,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/style2.css">
+        <link rel="stylesheet" href="style/styleAcceuil.css">
     </head>
-    
     <body>
         <nav class="navbar navbar-expand-md navbar-light bg-danger" id="nav">
             <div class="container-fluid">
@@ -61,35 +77,59 @@
             </div>
             
             <div class="itineraire col-lg-3 col-md-8">
+                <h3 class="rechLignes">Trouvez votre ligne</h3>
                 <form action="#" class="formItin">
-                    <select title="stationDepart">
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                    </select>
-                    <select title="stationArevee">
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                    </select><br>
-                    <input type="submit" value="Rechercher" id="recherche"><br>
-                    <select title="lignes" id="rechercheLigne">
+                    <div class="select">                    
+                        <select class="casrecherche" title="stationDepart" class="depart" name="depart">
+                        <option>Départ : Adresse</option>
+                        <!-- afficher une liste des adresses de depart-->
+                        <?php echo depart(); ?>
+                        
+                        </select>
+                    </div>
+                    <div class="select1">
+                    <select class="casrecherche" title="stationArevee" name="arrivee" id="arrivee">
+                        <option>Arrivée : Adresse</option>
+                       
 
+                        
+                         
                     </select>
+
+
+
+
+                </div><br>
+                     <script>
+   $(document).ready(function(){
+     $('#arrivee').change(function(){
+           var id_arrivee= $(this).val();
+           $.ajax({
+            url:"ajax2.php",
+            method:"POST",
+            data:{id_arrivee:id_arrivee},
+            dataType:"text",
+            success:function(data)
+            {
+                $('#ligne').html(data);
+            }
+           });
+
+     });
+
+
+   }); 
+
+</script>
                     
+                    <p title="lignes" id="ligne" name="ligne">
+
+                    </p>
+                   
                 </form>
+                <img src="img/background2.jpg" class="bonjourSafi">
+
+
             </div>
 
 
@@ -98,3 +138,24 @@
     </body>
 
 </html>
+<script>
+   $(document).ready(function(){
+     $('#depart').change(function(){
+           var id_depart= $(this).val();
+           $.ajax({
+            url:"ajax.php",
+            method:"POST",
+            data:{id_depart:id_depart},
+            dataType:"text",
+            success:function(data)
+            {
+                $('#arrivee').html(data);
+            }
+           });
+
+     });
+
+
+   }); 
+
+</script>
