@@ -1,94 +1,522 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>MY BUS</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style/styleAcceuil.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-danger" id="nav">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand"><span style="font-family: 'Baloo Chettan 2', cursive, sans-serif;">MY BUS</span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                        <a class="nav-link" href="index.html">Acceuil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="lignes.html">Lignes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="serviceClient.html">Service client</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="apropos.html">A propos</a>
-                        </li>
-                    </ul>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    
+    <title>GLOBAL SAFETY CONSULTING - Qualité, Hygiène, Sécurité et Environnement </title>
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/favicon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon/favicon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/favicon-54x54.png">
+    <link rel="icon" href="images/favicon/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="css/colorbox.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="body-inner">
+
+        <!-- Header start -->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="logo col-xs-12 col-sm-3">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="global safety consulting logo">
+                        </a>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-9 header-right">
+                        <ul class="top-info">
+                            <li>
+                                <div class="info-box">
+                                    <span class="info-icon"><i class="fa fa-map-marker">&nbsp;</i></span>
+                                    <div class="info-box-content">
+                                        <p class="info-box-title">GLOBAL SAFETY CONSULTING </p>
+                                        <p class="info-box-subtitle">68, Résidence Narjiss, Av Fal Ould Oumeir, N°10, Agdal, Rabat.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-box">
+                                    <span class="info-icon"><i class="fa fa-phone">&nbsp;</i></span>
+                                    <div class="info-box-content">
+                                        <p class="info-box-title">+212(0)5.30.99.82.01 </p>
+                                        <p class="info-box-subtitle">contact@global-safety.ma </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-box">
+                                    <span class="info-icon"><i class="fa fa-compass">&nbsp;</i></span>
+                                    <div class="info-box-content">
+                                        <p class="info-box-title">8.30 - 18.00 </p>
+                                        <p class="info-box-subtitle">Lundi au Vendredi </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!--header right end -->
+                </div> <!--row end -->
+            </div> <!--header end -->
+        </header>
+
+        <nav class="site-navigation navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="site-nav-inner pull-left">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="menu-item active">
+                                        <a href="index.html">Accueil </a>
+                                    </li>
+
+                                    <li class="menu-item ">
+                                        <a href="index.html#ts-features">Nos secteurs d’activités</a>
+                                    </li>
+
+                                    <li class="menu-item ">
+                                        <a href="nosServices.html"> Nos Services </a>
+                                    </li>
+
+                                    <li class="menu-item ">
+                                        <a href="nosReferences.html"> Nos références </a>
+                                    </li>
+
+                                    <li class="menu-item ">
+                                        <a href="team.html">Notre équipe </a>
+                                    </li>
+
+                                    <li class="menu-item ">
+                                        <a href="contact.html">Contact </a>
+                                    </li>
+
+                                </ul><!--/ Nav ul end -->
+                            </div><!--/ Collapse end -->
+
+                        </div><!-- Site Navbar inner end -->
+
+                        <div class="find-agent pull-right">
+                            <a href="contact.html">Plan d'accès</a>
+                        </div>
+
+                    </div><!--/ Col end -->
+                </div><!--/ Row end -->
+            </div><!--/ Container end -->
+        </nav><!--/ Navigation end -->
+
+        <!-- Carousel -->
+        <div id="main-slide" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators visible-lg visible-md">
+                <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slide" data-slide-to="1"></li>
+                <li data-target="#main-slide" data-slide-to="2"></li>
+                <li data-target="#main-slide" data-slide-to="3"></li>
+            </ol><!--/ Indicators end-->
+            <!-- Carousel inner -->
+            <div class="carousel-inner">
+                <div class="item active" style="background-image:url(images/slider-main/securite-btp.jpg)">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h2 class="slide-title animated4"> Saving World, Saving People… </h2>
+                            <h3 class="slide-sub-title animated5">Qualité, Hygiène, Sécurité et Environnement</h3>
+                            <p class="animated6">
+                                <a href="nosServices.html" class="slider btn btn-primary">Nos Services</a>
+                                <a href="nosReferences.html" class="slider btn btn-primary border">Nos Réalisations</a>
+                            </p>
+                        </div>
+                    </div>
+                </div><!--/ Carousel item end -->
+
+
+                <div class="item" style="background-image:url(images/slider-main/panneaux-photovoltaiques.jpg)">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <!--<div class="slider-img">
+                                  <img class="pull-left" src="images/slider-main/panneaux-photovoltaiques.jpg" alt="">
+                            </div>-->
+                            <div class="slider-text">
+                                <h2 class="slide-title animated2"> Energie Environnement</h2>
+                                <h3 class="slide-sub-title animated3">To Help With Your Insurance Needs</h3>
+                                <p class="animated6"><a href="#ts-features" class="slider btn btn-primary">Nos activités</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/ Carousel item end -->
+
+
+                <div class="item" style="background-image:url(images/slider-main/savoir-faire-bureau-etude.jpg)">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <!--<div class="slider-img">
+                                  <img class="pull-left" src="images/slider-main/savoir-faire-bureau-etude.jpg" alt="">
+                            </div>-->
+                            <div class="slider-text">
+                                <h2 class="slide-title animated2"> Bureau d'études</h2>
+                                <h3 class="slide-sub-title animated3">Nous transmettons notre savoir faire</h3>
+                                <p class="animated6"><a href="nosReferences.html" class="slider btn btn-primary">Nos réalisations</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/ Carousel item end -->
+
+                <div class="item" style="background-image:url(images/slider-main/environnement.jpg)">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+
+                            <div class="slider-text">
+                                <h2 class="slide-title animated2"> Friendly Staff</h2>
+                                <h3 class="slide-sub-title animated3">To Help With Your Insurance Needs</h3>
+                                <p class="animated6"><a href="contact.html" class="slider btn btn-primary">Contactez-nous</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/ Carousel item end -->
+
+            </div><!-- Carousel inner end-->
+            <!-- Controllers -->
+            <a class="left carousel-control" href="#main-slide" data-slide="prev">
+                <span><i class="fa fa-angle-left"></i></span>
+            </a>
+            <a class="right carousel-control" href="#main-slide" data-slide="next">
+                <span><i class="fa fa-angle-right"></i></span>
+            </a>
+
+            <span class="down-arrow-transparent"></span>
+
+        </div><!--/ Carousel end -->
+
+        <section id="ts-features" class="ts-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="intro">
+                            <h2 class="intro-title">
+
+                                <span class="title-head"> A PROPOS DE NOUS</span>
+                            </h2>
+                            <p class="intro-text"><strong> GLOBAL SAFETY CONSULTING</strong> est <strong>un bureau d'études et conseil marocain</strong> spécialisé dans <strong>les études, l'ingénierie, le conseil, l'audit et la formation</strong> et ce dans les domaines de <strong>la qualité, l'hygiène, la sécurité, l'environnement, le développement durable et les énergies renouvelables</strong> à l'échelle nationale et internationale.</p>
+                            <p class="intro-text"> Nous accompagnons nos clients dans les démarches relatives aux normes et standards Internationaux à savoir <strong>ISO 9001, ISO 14001, ISO 45001, ISO 50001, ISO 22000, FSSC, 22000 NFPA, FM GLOBAL, APSAD, OHSHA</strong>...</p>
+                            <p class="intro-text"><strong><strong>GLOBAL SAFETY CONSULTING</strong> opère principalement dans les secteurs suivants :</p>
+                        </div><!-- Intro end -->
+
+                        <div class=" intro-feature">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-8 col-xs-16">
+                                    <div class="ts-service-wrapper">
+                                        <div class="ts-service-icon-wrapper">
+                                            <span class="ts-service-icon"><i class="fa fa-building"></i></span>
+                                        </div>
+                                        <div class="ts-service-info">
+                                            <h3>Construction</h3>
+                                            <p>
+                                                Depuis la phase APS jusqu’à la reception provisoire des ouvrages
+                                            </p>
+                                        </div>
+                                    </div><!-- Service wrapper end -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-8 col-xs-16">
+                                    <div class="ts-service-wrapper">
+                                        <div class="ts-service-icon-wrapper">
+                                            <span class="ts-service-icon"><i class="fa fa-industry"></i></span>
+                                        </div>
+                                        <div class="ts-service-info">
+                                            <h3>INDUSTRIE</h3>
+                                            <p>Depuis la réalisation et process jusqu’à l’expédition, la logistique et transport des produits finis</p>
+                                        </div>
+                                    </div><!-- Service wrapper end -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-8 col-xs-16">
+                                    <div class="ts-service-wrapper">
+                                        <div class="ts-service-icon-wrapper">
+                                            <span class="ts-service-icon"><i class="fa fa-filter"></i></span>
+                                        </div>
+                                        <div class="ts-service-info">
+                                            <h3>PETROLIER</h3>
+                                            <p>Depuis les forages et puits pétroliers jusqu’à la distribution des produits petroliers</p>
+                                        </div>
+                                    </div><!-- Service wrapper end -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-8 col-xs-16">
+                                    <div class="ts-service-wrapper">
+                                        <div class="ts-service-icon-wrapper">
+                                            <span class="ts-service-icon"><i class="fa fa-train"></i></span>
+                                        </div>
+                                        <div class="ts-service-info">
+                                            <h3>FERROVIAIRE</h3>
+                                            <p>De l’accompagnement à la construction en toute sécurité de la voie ferrée et les usines de production des matières premières jusqu’aux audits voie et caténaires</p>
+                                        </div>
+                                    </div><!-- Service wrapper end -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-8 col-xs-16">
+                                    <div class="ts-service-wrapper">
+                                        <div class="ts-service-icon-wrapper">
+                                            <span class="ts-service-icon"><i class="fa fa-line-chart"></i></span>
+                                        </div>
+                                        <div class="ts-service-info">
+                                            <h3>SERVICE</h3>
+                                            <p>Nous accompagnons les BET et cabinets à s’organiser et répondres aux exigences réglementaires ou celles des clients</p>
+                                        </div>
+                                    </div><!-- Service wrapper end -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-8 col-xs-16">
+                                    <div class="ts-service-wrapper">
+                                        <div class="ts-service-icon-wrapper">
+                                            <span class="ts-service-icon"><i class="fa fa-anchor"></i></span>
+                                        </div>
+                                        <div class="ts-service-info">
+                                            <h3>Portuaire</h3>
+                                            <p>Nous accompagnons les BET et cabinets à s’organiser et répondres aux exigences réglementaires ou celles des clients</p>
+                                        </div>
+                                    </div><!-- Service wrapper end -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-8 col-xs-16">
+                                    <div class="ts-service-wrapper">
+                                        <div class="ts-service-icon-wrapper">
+                                            <span class="ts-service-icon"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                                        </div>
+                                        <div class="ts-service-info">
+                                            <h3>ENERGETIQUE</h3>
+                                            <p>Nous accompagnons les BET et cabinets à s’organiser et répondres aux exigences réglementaires ou celles des clients</p>
+                                        </div>
+                                    </div><!-- Service wrapper end -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-8 col-xs-16">
+                                    <div class="ts-service-wrapper">
+                                        <div class="ts-service-icon-wrapper">
+                                            <span class="ts-service-icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                                        </div>
+                                        <div class="ts-service-info">
+                                            <h3>MINIER</h3>
+                                            <p>Nous accompagnons les BET et cabinets à s’organiser et répondres aux exigences réglementaires ou celles des clients</p>
+                                        </div>
+                                    </div><!-- Service wrapper end -->
+                                </div>
+
+
+                            </div><!--/ row end -->
+                        </div><!-- Intro feature end -->
+                    </div><!-- Col end -->
+
+                </div><!--/ Content row end -->
+            </div><!--/ Container end -->
+        </section><!-- About us end -->
+
+        <section id="facts" class="facts no-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 fact-text">
+                        <h2 class="intro-title">
+                            <span class="title-head">Quelques chiffres clès:</span>
+                        </h2>
+                        <p><strong>GLOBAL SAFETY CONSULTING </strong> a réussit plusieurs missions dans les domaines de la Qualité, Hygiène, Sécurité et Environnement qui touchent directement ou indirectement les secteurs du construction, de l’industrie, du ferroviaire, du Portuaire, du Pétrolier, d'energetique, de minier et de services.</p>
+                        <p><a class="btn btn-dark" href="#contact-form">Contactez-nous</a></p>
+
+                    </div><!-- Col end -->
+
+                    <div class="col-md-6">
+                        <div class="facts-wrapper">
+                            <div class="col-md-6 ts-facts">
+                                <div class="ts-facts-icon">
+                                    <i class="fa fa-umbrella"></i>
+                                </div>
+                                <div class="ts-facts-content">
+                                    <h2 class="ts-facts-num"><span class="counterUp">136</span></h2>
+                                    <h3 class="ts-facts-title">Missions réussies</h3>
+                                </div>
+                            </div><!-- Col end -->
+
+                            <div class="col-md-6 ts-facts">
+                                <div class="ts-facts-icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <div class="ts-facts-content">
+                                    <h2 class="ts-facts-num"><span class="counterUp">5</span></h2>
+                                    <h3 class="ts-facts-title">Villes différentes</h3>
+                                </div>
+                            </div><!-- Col end -->
+
+                            <div class="col-md-6 ts-facts">
+                                <div class="ts-facts-icon">
+                                    <i class="fa fa-smile-o"></i>
+                                </div>
+                                <div class="ts-facts-content">
+                                    <h2 class="ts-facts-num"><span class="counterUp">29</span></h2>
+                                    <h3 class="ts-facts-title">Clients satisfaits</h3>
+                                </div>
+                            </div><!-- Col end -->
+
+                            <div class="col-md-6 ts-facts">
+                                <div class="ts-facts-icon">
+                                    <i class="fa fa-street-view"></i>
+                                </div>
+                                <div class="ts-facts-content">
+                                    <h2 class="ts-facts-num"><span class="counterUp">5</span></h2>
+                                    <h3 class="ts-facts-title">Partenaires internationaux</h3>
+                                </div>
+                            </div>
+                        </div> <!-- Facts end -->
+                    </div><!-- Col end -->
+                </div><!--/ Content row end -->
+            </div><!--/ Container end -->
+        </section><!-- Facts end -->
+
+        <!-- Footer start -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 footer-widget footer-about">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="logo-Global-Safety-Consulting">
+                        </div>
+
+                        <p> <strong> GLOBAL SAFETY CONSULTING</strong> est un bureau d'études et conseil marocain spécialisé dans les études, l'ingénierie, le conseil, l'audit et la formation et ce dans les domaines de la qualité, l'hygiène, la sécurité, l'environnement, le développement durable et les énergies renouvelables à l'échelle nationale et internationale.</p>
+                        <p>Nous accompagnons nos clients dans les démarches relatives aux normes et standards Internationaux à savoir ISO 9001, ISO 14001, ISO 45001, ISO 50001, ISO 22000, FSSC, 22000 NFPA, FM GLOBAL, APSAD, OHSHA ...</p>
+                        <p><strong>Lun/Ven</strong> 8.30 - 13.00 / 14.00 - 18.00</p>
+                    </div><!-- About us end -->
+
+                    <div class="col-md-4 col-sm-12 footer-widget">
+                        <h3 class="widget-title">Liens Importants</h3>
+
+                        <ul class="list-arrow">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="index.html#ts-features">Nos secteurs d’activités</a></li>
+                            <li><a href="nosServices.html">Nos services</a></li>
+                            <li><a href="#featured-tab-area">Études et ingénierie</a></li>
+                            <li><a href="#featured-tab-area">Formations</a></li>
+                            <li><a href="#featured-tab-area">Audits</a></li>
+                            <li><a href="#featured-tab-area">Conseil et Accompagnement</a></li>
+                            <li><a href="nosReferences.html">Prestations réalisées</a></li>
+                            <li><a href="notreEquipe.html">Notre équipe</a></li>
+                            <!-- <li><a href="#">Contactez-nous</a></li>
+                                                    <li><a href="#">Learn insurance</a></li>
+                                                    <li><a href="#">Insurance Quotes</a></li>
+                                                    <li><a href="#">Product Disclosure</a></li>
+                            -->
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 footer-widget">
+                        
+                        <div class="footer-social" style="margin-top: 0">
+                            <h3 class="widget-title">Restez Connectés</h3>
+                            <ul>
+
+                                <li><a target="_blank" href="https://www.facebook.com/Global.Safety.Consulting/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/GLOBALSAFETYSAR"><i class="fa fa-twitter"></i></a></li>
+
+                                <li><a target="_blank" href="https://www.linkedin.com/company/global-safety-consulting"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a target="_blank" href="http://www.viadeo.com/fr/company/global-safety-consulting"><i class="fa"> <strong> V </strong></i></a></li>
+
+                            </ul>
+                        </div><!-- Footer social end -->
+                    </div>
+                </div><!--/ Content row end -->
+
+                <div class="row copyright">
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="copyright-info">
+                            <span>Copyright © 2020 GSC. Tous les droits sont réservés.</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-push-1">
+                        <div class="footer-menu">
+                            <ul class="nav unstyled">
+
+                                <li><a target="_blank" href="http://astuciagroup.com/">© Réalisé par AStucia Group</a></li>
+                                <li><a href="#">Mentions Légales</a></li>
+                                <li><a href="#">CGV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- Copyright end -->
+
+                <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+                    <a href="#header"><button class="btn btn-primary" title="Back to Top">
+                        <i class="fa fa-angle-double-up"></i>
+                    </button></a>
                 </div>
 
-            </div>
-        </nav>
+            </div><!--/ Container end -->
+        </footer><!-- Footer end -->
 
-        <div class="blocPage row justify-content-md-center">
+    </div>
+    
 
-            <div class="ban carousel slide col-lg-9 col-md-12" id="slides" data-ride="carousel">
-                <ul class="carousel-indicators">
-                   <li data-target="#slides" data-slide-to="0" class="active"></li>
-                   <li data-target="#slides" data-slide-to="1" class="active"></li>
-                   <li data-target="#slides" data-slide-to="2" class="active"></li> 
-                </ul>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/background.jpg">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/background1.jpeg">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/background3.jpg">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="itineraire col-lg-3 col-md-8">
-                <h3 class="rechLignes">Trouvez votre ligne</h3>
-                <form action="#" class="formItin">
-                    <div class="select">                    
-                        <select class="casrecherche" title="stationDepart" class="depart" name="depart">
-                        <option>Départ : Adresse</option>
-                        <!-- afficher une liste des adresses de depart-->
-                        <?php echo depart(); ?>
-                        
-                        </select>
-                    </div>
-                    <div class="select1">
-                    <select class="casrecherche" title="stationArevee" name="arrivee" id="arrivee">
-                        <option>Arrivée : Adresse</option>
-                         
-                    </select>
-                        
-                </div><br>
-                    <p title="lignes" id="ligne" name="ligne">
-
-                    </p>
-                   
-                </form>
-                <img src="img/background2.jpg" class="bonjourSafi">
-
-
-            </div>
-
-
-        </div>
-        <script src="script/script1.js"></script>
-    </body>
-
+    <!-- initialize jQuery Library -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Bootstrap jQuery -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!-- Counter -->
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <!-- Waypoints -->
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <!-- Color box -->
+    <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+    <!-- Isotope -->
+    <script type="text/javascript" src="js/isotope.js"></script>
+    <script type="text/javascript" src="js/ini.isotope.js"></script>
+    <script>
+		$(document).ready(function(){
+			$(".menu-item").click(function(){
+			    $(".menu-item").each(function (el) {
+			        $(this).removeClass("active");
+			    });
+			    $(this).addClass("active");
+			});
+		});
+		</script>
+</body>
 </html>
